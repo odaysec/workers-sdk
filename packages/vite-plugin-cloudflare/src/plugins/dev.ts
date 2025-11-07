@@ -69,6 +69,7 @@ export const devPlugin = createPlugin("dev", (ctx) => {
 				);
 				const workerExportTypes = await getWorkerExportTypes(
 					ctx.resolvedPluginConfig,
+					viteDevServer,
 					ctx.miniflare
 				);
 				console.log("workerExportTypes", workerExportTypes);
